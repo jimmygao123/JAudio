@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ze6-Is-H7s">
+                                <rect key="frame" x="247" y="285" width="107" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="EzG-W3-AZ2"/>
+                                    <constraint firstAttribute="height" constant="30" id="Kew-Rw-ket"/>
+                                </constraints>
+                                <state key="normal" title="record">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onpressedBtnRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bSW-Od-P0V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FU6-3v-Lyq">
+                                <rect key="frame" x="266" y="390" width="68" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="nK4-uM-gqs"/>
+                                    <constraint firstAttribute="height" constant="30" id="nLG-iQ-yJA"/>
+                                </constraints>
+                                <state key="normal" title="play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onpressedBtnPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ahH-tM-Pzy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Ze6-Is-H7s" secondAttribute="centerY" id="D11-zO-llA"/>
+                            <constraint firstItem="FU6-3v-Lyq" firstAttribute="centerX" secondItem="Ze6-Is-H7s" secondAttribute="centerX" constant="-0.5" id="Kgr-y7-e9e"/>
+                            <constraint firstItem="FU6-3v-Lyq" firstAttribute="top" secondItem="Ze6-Is-H7s" secondAttribute="bottom" constant="75" id="sqQ-oI-iU6"/>
+                            <constraint firstAttribute="centerX" secondItem="Ze6-Is-H7s" secondAttribute="centerX" constant="-0.5" id="z4y-Iy-ytg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnPlay" destination="FU6-3v-Lyq" id="URc-KN-VuX"/>
+                        <outlet property="btnRecord" destination="Ze6-Is-H7s" id="UcO-BE-GfR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
